@@ -1,4 +1,8 @@
 export function toLocaleString(num) {
-  // TODO : 여기에 코드 작성을 해주세요.
-  return "1,000,000,00";
+  const text = "test문자001122334455문.자,특수기호##!"
+
+  let number = Number(text.replaceAll(/[^0-9]/g, ""))
+  let answer = number.toLocaleString('ko-KR')
+
+  return answer;
 }
